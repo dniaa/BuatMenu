@@ -7,43 +7,46 @@
     <title>Document</title>
 </head>
 <style>
-
-body {
-        background-color: rgb(250, 194, 222);
-    }
-    .menu_ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-    .menu_ul li {
-    display: inline;
+  .menu_ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: indigo;
 }
-.menu_ul a {
+.menu_ul li {
+    float: left;
+}
+.menu_ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 8px;
-    color: cornsilk;
-    background-color: hotpink;
 }
-
+.menu_ul li a:hover {
+    background-color: darkgreen;
+}  
 </style>
 <body>
-    <h1>Buat Menu</h1>
 
     <ul class="menu_ul">
     <ul class="menu_ul li">
-    <ul class="menu_ul a">
+    <ul class="menu_ul li a">
+    <ul class="menu_ul li a:hover">
 
         <li><a href="#utama">Laman Utama</a></li>
         <li><a href="#produk">Senarai Produk</a></li>
         <li><a href="#tempah">Borang Tempahan</a></li>
         <li><a href="#hubungi">Hubungi Kami</a></li>
 
-    </ul>
-    </ul>
-    </ul>
-    </ul>
+        </ul>
+        </ul>
+        </ul>
+        </ul>
 
+    <h1>Buat Menu</h1>
+
+        
 </body>
 </html>
